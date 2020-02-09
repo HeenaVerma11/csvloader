@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CsvLoader</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+<body>
+  <table class="minimalistBlue">
+  <thead>
+  <th>
+    <img src="assets/img/logo.png" class="minimalImage">
+  </th>
+  </thead>
+  <tbody>
+<td>
+  <p class="minimalist"> Please upload CSV file: <input type="file"  #csvLoader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />  </p>
+    <p class="minimalist" *ngIf="records.length > 0">Most often sold vehicle is <span> {{mostSoldVehicle}} </span> </p>
+    <table class="minimalistBlue" *ngIf="records.length > 0">    
+     <thead>    
+       <tr>      
+         <th>#</th>           
+         <th>DealerNumber </th>    
+         <th>CustomerName </th>    
+         <th>DealershipName </th>    
+         <th>Vehicle </th>    
+         <th>Price </th> 
+         <th>Date </th>   
+       </tr>    
+     </thead>    
+     <tbody>    
+       <tr *ngFor="let record of records;let i = index;">
+         <td> <span>{{record.id}}</span> </td>
+         <td> <span>{{record.dealNumber}}</span> </td>    
+         <td> <span>{{record.customerName}}</span> </td>    
+         <td> <span>{{record.dealershipName}}</span> </td>    
+         <td> <span>{{record.vehicle}}</span> </td>  
+         <td> <span>{{record.price | currency:'CAD' : "CAD $" :'3.2-2':'en'}}</span> </td>
+         <td> <span>{{record.date | date}}</span> </td>   
+       </tr>    
+     </tbody>    
+   </table> 
+
+</td>
+  </tbody>
+  </table>
+ 
+</body>
+</html>
+
+
+
+        

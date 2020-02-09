@@ -1,0 +1,65 @@
+    p.minimalist {
+        width: 100%;
+        color:rgb(1, 1, 15); 
+        font-size: 16px; 
+        text-align: left;
+        
+    }  
+
+    p.minimalist span{
+        font-weight:bold;
+        
+    }  
+   
+    img.minimalImage{
+    width :100%;
+    height: 100%;
+    }
+
+   table.minimalistBlue {  
+         
+        width: 100%;  
+        text-align: left; 
+        color:rgb(1,1,15);     
+        border-collapse: collapse
+        
+    }  
+      
+    table.minimalistBlue td,  
+    table.minimalistBlue th {  
+        border: 1px solid rgb(65, 50, 146);  
+        padding: 3px 4px  
+    }  
+      
+    table.minimalistBlue tbody td {  
+        font-size: 16px ;
+        
+    }  
+    
+    
+    table.minimalistBlue thead {  
+        background: rgb(65, 50, 146);  
+        background: -moz-linear-gradient(top, #dbdbdb 0, #d3d3d3 66%, #cfcfcf 100%);  
+        background: -webkit-linear-gradient(top, #dbdbdb 0, #d3d3d3 66%, #cfcfcf 100%);  
+        background: linear-gradient(to bottom, #dbdbdb 0, #d3d3d3 66%, #cfcfcf 100%);  
+        border-bottom: 3px solid rgb(65, 50, 146)  
+    }  
+      
+    table.minimalistBlue thead th {  
+        font-size: 18px;  
+        font-weight: 700;  
+        color: rgb(65, 50, 146);  
+        text-align: left  
+    }  
+      
+    table.minimalistBlue tfoot {  
+        font-size: 16px;  
+        font-weight: 700;  
+        color: rgb(65, 50, 146);  
+        border-top: 3px solid rgb(65, 50, 146)  
+    }  
+      
+    table.minimalistBlue tfoot td {  
+        font-size: 16px  
+    }  
+
